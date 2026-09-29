@@ -1,0 +1,14 @@
+/* Override slick carousel fonts with font-display: swap for better performance */
+/* This fixes the 800ms+ font loading delay reported by Lighthouse */
+
+@font-face {
+    font-family: 'slick';
+    src: url('~slick-carousel/slick/fonts/slick.eot');
+    src: url('~slick-carousel/slick/fonts/slick.eot?#iefix') format('embedded-opentype'),
+         url('~slick-carousel/slick/fonts/slick.woff') format('woff'),
+         url('~slick-carousel/slick/fonts/slick.ttf') format('truetype'),
+         url('~slick-carousel/slick/fonts/slick.svg#slick') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

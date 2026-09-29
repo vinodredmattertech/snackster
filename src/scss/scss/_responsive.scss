@@ -1,0 +1,372 @@
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+   .mobile-header {
+     background-color: #A100FF;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 111;
+     transition: all 0.35s ease;
+    //  max-height: 150px; use if top strip enabled
+    max-height: 85px;
+
+     .top-header {
+       background-color: #fecd01;
+       padding: 10px;
+       text-align: center;
+       transition: all 0.35s ease;
+
+       p {
+         margin-bottom: 0;
+         font-size: 1rem;
+         font-family: $px-font2;
+       }
+     }
+
+     .container {
+       display: flex;
+       justify-content: flex-start;
+       align-items: flex-start;
+       padding: 10px 20px;
+
+       &.scrolled {
+         padding: 5px 20px;
+
+         img {
+           width: 40% !important;
+           // height: 10%;
+           margin-left: 90px !important;
+         }
+
+         .mobile-header {
+           height: auto;
+
+           .container {
+             justify-content: center !important;
+           }
+         }
+       }
+
+       .menu-icon {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         height: 24px;
+         cursor: pointer;
+         margin-top: 15px;
+
+         span {
+           display: block;
+           width: 25px;
+           height: 2.5px;
+           background-color: #fecd01;
+           transition: all 0.3s;
+         }
+
+         span:nth-child(2) {
+           width: 18px;
+         }
+       }
+
+       .logo {
+         img {
+           width: 80%;
+           transition: all 0.3s;
+           margin-left: 40px;
+         }
+       }
+
+       .mobile-menu {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         right: 0;
+         background-color: #A100FF;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
+         backdrop-filter: blur(10px);
+         z-index: -1;
+
+         a {
+           color: #fecd01;
+           text-transform: uppercase;
+           font-size: 14px;
+           letter-spacing: 1px;
+           font-weight: 500;
+           margin: 10px 0;
+           cursor: pointer;
+           transition: color 0.3s;
+           font-family: $px-font1;
+           text-decoration: none;
+
+           &:hover {
+             color: #ffffff;
+           }
+         }
+       }
+
+       &.menu-open .menu-icon {
+         span:nth-child(1) {
+           transform: rotate(45deg) translate(5px, 5px);
+         }
+
+         span:nth-child(2) {
+           opacity: 0;
+         }
+
+         span:nth-child(3) {
+           transform: rotate(-45deg) translate(5px, -5px);
+         }
+       }
+     }
+   }
+
+
+
+   .dq-img {
+     max-width: 150% !important;
+   }
+
+
+   .products h1 {
+     font-size: 2rem;
+   }
+
+   .product-image img {
+     width: 100%;
+   }
+
+
+   .product-title {
+     padding-left: 70px;
+     font-size: 1.2rem;
+   }
+
+   .add-to-cart-btn {
+     padding-top: 20px;
+     padding-bottom: 5px;
+     opacity: 1;
+
+     .add-party-btn {
+       background-color: #A100FF;
+       color: #FFCD00;
+     }
+   }
+
+   .product-card:hover .add-party-btn {
+     background-color: #FFCD00;
+     color: #A100FF;
+   }
+
+   .slick-dots li button:before {
+     font-size: 15px !important;
+   }
+
+   .slick-dots li.slick-active button:before {
+     color: #A100FF;
+   }
+
+
+   /* Icons Section */
+
+   .icon {
+     width: 100px;
+     height: 100px;
+     margin: 20px 0;
+     transition: none;
+   }
+
+   .icon-text {
+     font-size: .9rem;
+   }
+
+   .icon-container:hover .icon-text {
+     font-size: 1rem;
+   }
+
+   .breaded:hover .icon {
+     background-image: url('../../../public/images/breaded_icon_hover.svg');
+     width: 110px;
+     height: 110px;
+   }
+
+
+   /* Recipe */
+
+
+   .party-title {
+     font-size: 2rem;
+   }
+
+
+   .party-more-fun-container {
+
+     .slick-dots li.slick-active button:before {
+       color: #FFCD00;
+     }
+   }
+
+   .product-detail {
+    .slick-dots li.slick-active button:before {
+      color: #A100FF;
+    }
+   }
+
+   .recipe-card {
+     height: 435px;
+   }
+
+
+
+   .circle:nth-child(1) {
+     width: 220px;
+     height: 220px;
+     background-color: rgba(0, 102, 204, 1);
+     animation-delay: 0s;
+   }
+
+   .circle:nth-child(2) {
+     width: 280px;
+     height: 280px;
+     background-color: rgba(0, 102, 204, 0.8);
+     animation-delay: 0.3s;
+   }
+
+   .circle:nth-child(3) {
+     width: 320px;
+     height: 320px;
+     background-color: rgba(0, 102, 204, 0.6);
+     animation-delay: 0.6s;
+   }
+
+   .circle:nth-child(4) {
+     width: 380px;
+     height: 380px;
+     background-color: rgba(0, 102, 204, 0.4);
+     animation-delay: 0.9s;
+   }
+
+   .circle:nth-child(5) {
+     width: 420px;
+     height: 420px;
+     background-color: rgba(0, 102, 204, 0.3);
+     animation-delay: 1.2s;
+   }
+
+   .circle:nth-child(6) {
+     width: 480px;
+     height: 480px;
+     background-color: rgba(0, 102, 204, 0.2);
+     animation-delay: 1.5s;
+   }
+
+   .circle:nth-child(7) {
+     width: 520px;
+     height: 520px;
+     background-color: rgba(0, 102, 204, 0.3);
+     animation-delay: 1.8s;
+   }
+
+   .circle:nth-child(8) {
+     width: 580px;
+     height: 580px;
+     background-color: rgba(0, 102, 204, 0.4);
+     animation-delay: 2.1s;
+   }
+
+   .anim-text1,
+   .anim-text2,
+   .anim-text3 {
+     top: 30%;
+     font-size: 3.5rem;
+   }
+
+   .slide-image {
+     width: 80%;
+   }
+
+   .footer {
+     margin-top: -2rem;
+   }
+
+   .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    font-size: 1.2rem;
+   }
+
+   .accordion-body {
+    font-size: 1rem;
+   }
+
+   /*PDP*/
+   .cook-steps-content {
+     padding: 1rem 0.5rem;
+
+     h2 {
+      font-size: 1.2rem;
+     }
+
+     p {
+      font-size: .8rem;
+     }
+   }
+
+   .pdp-background-shape3 {
+    height: 95%;
+    width: 100%;
+   }
+
+   .pdp-anim-text1, .pdp-anim-text2, .pdp-anim-text3 {
+    top: 35%;
+    font-size: 2.7rem;
+}
+
+/*about*/
+
+.about-snackster {
+  .party-snack {
+    h1 {
+    font-size: 2rem;
+    text-align: left;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .spotify-section {
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.recipe-detailed-heading {
+  font-size: 2rem;
+}
+
+ }
+
+ /* Media Query for low resolution  Tablets, Ipads */
+ @media (min-width: 481px) and (max-width: 767px) {
+   
+ }
+
+ /* Media Query for Tablets Ipads portrait mode */
+ @media (min-width: 768px) and (max-width: 1024px) {
+  
+ }
+
+ /* Media Query for Laptops and Desktops */
+ @media (min-width: 1025px) and (max-width: 1280px) {
+     .footer {
+       margin-top: -6rem;
+     }
+ }
+
+ /* Media Query for Large screens */
+ @media (min-width: 1281px) {}

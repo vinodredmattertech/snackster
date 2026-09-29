@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /server/
+Disallow: /preview/  # Blocks Contentful preview URLs if applicable
+
+# Allow all search engines to crawl everything else
+Allow: /
+
+# Optional: Block specific bots (e.g., bad bots)
+User-agent: BadBot
+Disallow: /
+
+Sitemap: https://www.snackster.co.in/sitemap.xml

@@ -1,0 +1,38 @@
+.footer {
+    background-color: #E21E79;
+    padding-top: 5rem;
+    margin-top: -7rem;
+    z-index: 99;
+  }
+  
+  .footer-title {
+    font-family: $px-font1;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .footer p {
+    font-family: $px-font1;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .footer p.mt-4 {
+    font-size: 12px;
+  }
+
+  .bg-white p {
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem !important;
+    font-weight: bold;
+  }
+
+  .footer-social {
+    h3 {
+      text-align: left;
+      font-family: $px-font1;
+      font-size: 22px;
+    }
+  }

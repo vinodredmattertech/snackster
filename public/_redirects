@@ -1,0 +1,6 @@
+/party-snacks-Hyderabad /party-snacks-hyderabad 301!
+
+# Canonical URLs have no trailing slash (except /). Force 301 before SPA fallback.
+/*/ /:splat 301!
+
+/* /index.html 200
